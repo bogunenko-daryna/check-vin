@@ -6,8 +6,8 @@ Install project components - sudo yarn install
 
 Development requires an environment
 
-<p>node - v12.16.1</p>
-<p>npm - v6.13.4</p>
+<p>node - v12.18.3</p>
+<p>npm - v6.14.6</p>
 <p>yarn - v1.22</p>
 <p></p>
 
