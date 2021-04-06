@@ -1,0 +1,58 @@
+@import "common/variables";
+@import "bootstrap";
+
+/** Utilities & Helpers */
+@import "utilities/position";
+
+/** Import theme styles */
+@import "reset";
+@import "mixins";
+@import "type";
+
+@import "layouts/welcome";
+@import "components/animate";
+
+/** Import everything from autoload */
+@import "autoload/lazy";
+
+/**
+ * Import npm dependencies
+ *
+ * Prefix your imports with `~` to grab from node_modules/
+ * @see https://github.com/webpack-contrib/sass-loader#imports
+ */
+
+/**
+ * ==========
+ * Components
+ * ==========
+ * Components are reusable UI elements on pages, for example:
+ * - generic components can be buttons, navs, gallery slider
+ * - page-specific components such as testimonials
+ */
+// @import "components/buttons";
+@import "components/fonts";
+
+/**
+ * ==========
+ * Layouts
+ * ==========
+ * Layouts define the scaffold of the application
+ * such as header, footer
+ */
+// @import "layouts/base";
+
+@import "~swiper/swiper";
+@import "~slick-carousel/slick/slick-theme.css";
+@import "~slick-carousel/slick/slick.css";
+/*@import "~owl.carousel/dist/assets/owl.carousel.css";*/
+@import "~owl.carousel/dist/assets/owl.carousel.css";
+@import "~owl.carousel/dist/assets/owl.carousel.min.css";
+@import "~jquery.mmenu/dist/jquery.mmenu.css";
+
+// @import "common/buttons";
+@import "common/header";
+
+@import "common/footer";
+@import "common/mobile-menu";
+@import "common/global";
