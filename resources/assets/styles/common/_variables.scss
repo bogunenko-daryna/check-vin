@@ -21,5 +21,12 @@ $animation-elastic: cubic-bezier(0.63, 0.62, 0.48, 1.3);
 // Example of customising primary bootstrap brand colours
 $theme-colors: (
   primary: $colour-blue,
-  secondary: darken($colour-blue, 15%)
+  secondary: darken($colour-blue, 15%),
+);
+
+$container-max-widths: (
+  sm: 680px,
+  md: 820px,
+  lg: 1200px,
+  xl: 1700px,
 );

@@ -1,7 +1,7 @@
 ///
 /// iOS Momentum scroll
 ///
-@mixin ios-scroll () {
+@mixin ios-scroll() {
   overflow-y: auto;
   @supports (-webkit-overflow-scrolling: touch) {
     overflow-y: scroll;
@@ -49,19 +49,28 @@
   font-size: $responsive;
 }
 
-@mixin hkg-bold {
-  font-family: "HK Grotesk", sans-serif;
+@mixin pop-bold {
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
+  font-style: normal;
 }
-@mixin hkg-med {
-  font-family: "HK Grotesk", sans-serif;
-  font-weight: 500;
+@mixin pop-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-style: italic;
 }
-@mixin hkg-reg {
-  font-family: "HK Grotesk", sans-serif;
-  font-weight: 400;
+@mixin pop-reg {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-style: normal;
 }
-@mixin hkg-sb {
-  font-family: "HK Grotesk", sans-serif;
+@mixin semi-bold {
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-style: normal;
+}
+@mixin semi-med {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }

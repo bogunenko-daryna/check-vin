@@ -1,4 +1,5 @@
 @import "common/variables";
+
 @import "bootstrap";
 
 /** Utilities & Helpers */
@@ -8,6 +9,7 @@
 @import "reset";
 @import "mixins";
 @import "type";
+@import "global";
 
 @import "layouts/welcome";
 @import "components/animate";
@@ -32,6 +34,8 @@
  */
 // @import "components/buttons";
 @import "components/fonts";
+@import "components/page-hero.scss";
+@import "components/telegram-bot.scss";
 
 /**
  * ==========
@@ -41,3 +45,4 @@
  * such as header, footer
  */
 // @import "layouts/base";
+@import "common/header.scss";
