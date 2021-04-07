@@ -3,9 +3,7 @@
 
 // import external dependencies
 import './util/polyfills'
-import 'jquery'
-
-
+import 'jquery';
 
 // Import everything from autoload
 import './autoload/**/*'
@@ -14,7 +12,6 @@ import './autoload/**/*'
 import Router from './util/Router';
 import common from './routes/common';
 import Detection from './util/Detection';
-import index from './routes/index';
 
 window._detector = new Detection({
  detect: ['ie11'],
@@ -25,7 +22,6 @@ window._detector.init();
 const routes = new Router({
   // All pages
   common,
-  'homePage': index,
 });
 
 // // Load Events
