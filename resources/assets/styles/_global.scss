@@ -66,6 +66,26 @@
   color: #fff;
   font-size: 30px;
   @include pop-bold;
+  position: relative;
+  &:after {
+    position: absolute;
+    display: block;
+    transition: 0.3s;
+    content: "";
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    left: -8px;
+    opacity: 0;
+    border: 2px solid #298ded;
+    color: #fff !important;
+    border-radius: 23px;
+  }
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
 }
 h1 {
   b {
