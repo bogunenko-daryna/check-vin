@@ -14,36 +14,16 @@
 @import "layouts/welcome";
 @import "components/animate";
 
-/** Import everything from autoload */
+// autoload
 @import "autoload/lazy";
 
-/**
- * Import npm dependencies
- *
- * Prefix your imports with `~` to grab from node_modules/
- * @see https://github.com/webpack-contrib/sass-loader#imports
- */
+@import "~swiper/swiper";
 
-/**
- * ==========
- * Components
- * ==========
- * Components are reusable UI elements on pages, for example:
- * - generic components can be buttons, navs, gallery slider
- * - page-specific components such as testimonials
- */
-// @import "components/buttons";
+//components
 @import "components/fonts";
 @import "components/page-hero.scss";
 @import "components/telegram-bot.scss";
-
-/**
- * ==========
- * Layouts
- * ==========
- * Layouts define the scaffold of the application
- * such as header, footer
- */
-// @import "layouts/base";
+@import "components/home-slider.scss";
+//common
 @import "common/header.scss";
 @import "common/footer";

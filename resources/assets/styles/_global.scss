@@ -101,3 +101,15 @@ h1 {
   line-height: 120.8%;
   text-transform: uppercase;
 }
+
+select {
+  appearance: none;
+  &::after {
+    content: "";
+    top: 14px;
+    right: 12px;
+    border-style: solid;
+    border-width: 5px 4.5px 0 4.5px;
+    border-color: #000 transparent transparent transparent;
+  }
+}
