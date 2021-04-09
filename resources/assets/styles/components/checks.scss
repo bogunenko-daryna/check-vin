@@ -1,0 +1,43 @@
+.checks {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-image: url("images/checks-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__top {
+    margin-bottom: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    strong {
+      color: #4f697d;
+      font-size: 20px;
+      @include semi-bold;
+    }
+  }
+  &__list {
+    max-width: 1100px;
+    margin: auto;
+    &-info {
+      display: flex;
+      svg {
+        margin-right: 15px;
+      }
+    }
+    &-string {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0 10px 0;
+      border-bottom: 1px solid #e5e5e5;
+    }
+  }
+  &__content {
+    background-image: url("images/checks.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+}

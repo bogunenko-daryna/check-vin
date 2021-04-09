@@ -5,9 +5,11 @@ export default {
     var headroom  = new Headroom(document.querySelector('header'));
     headroom.init();
 
-    var swiper = new Swiper('.swiper-container.slider-quotes', {
+   if($('.slider-quotes').hasClass('slider-quotes')) {
+    var mySwiper = new Swiper('.slider-quotes.swiper-container', {
       slidesPerView: 2,
       spaceBetween: 50,
+      
       pagination: {
         el: '.swiper-pagination',
        
@@ -17,7 +19,15 @@ export default {
         prevEl: '.swiper-button-prev',
       },
     });
-    swiper.init();
+
+  
+  
+   }
+
+   mySwiper.init();
+   
+
+    
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired

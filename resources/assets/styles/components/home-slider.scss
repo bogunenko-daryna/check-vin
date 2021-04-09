@@ -4,6 +4,11 @@
     max-width: 1300px;
     margin: auto;
   }
+  &__content {
+    background-image: url("images/testimonials.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+  }
   &__top {
     display: flex;
     justify-content: center;
@@ -12,6 +17,24 @@
       color: #4f697d;
       font-size: 20px;
       @include semi-bold;
+    }
+  }
+  .swiper-button-next {
+    position: absolute;
+    bottom: 120px;
+    right: 0;
+  }
+  .swiper-button-prev {
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+  }
+  .swiper-button-disabled {
+    pointer-events: none;
+    svg {
+      path {
+        fill: #e5e5e5;
+      }
     }
   }
   .slider-quotes {
@@ -47,8 +70,8 @@
     }
     &__stars {
       display: flex;
-      align-items: center;
-      margin-top: 60px;
+      align-items: flex-end;
+
       svg {
         margin-right: 15px;
       }
@@ -69,12 +92,17 @@
       }
     }
     &__slide {
+      height: 330px;
       padding: 30px 40px 30px 60px;
       width: 100%;
       max-width: 605px;
       background: #fff;
       box-shadow: 0 4px 4px rgba(79, 105, 125, 0.25);
       border-radius: 50px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       p {
         @include pop-italic;
         font-size: 20px;
