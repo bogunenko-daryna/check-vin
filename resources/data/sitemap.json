@@ -5,6 +5,26 @@
       "title": "Home Page",
       "description": "pending",
       "url": "/index.html"
+    },
+    {
+      "title": "Contact Us Page",
+      "description": "pending",
+      "url": "/contact-us.html"
+    },
+    {
+      "title": "Blog Banner Page",
+      "description": "pending",
+      "url": "/blog-banner.html"
+    },
+    {
+      "title": "Blog Page",
+      "description": "pending",
+      "url": "/blog.html"
+    },
+    {
+      "title": "Products Page",
+      "description": "pending",
+      "url": "/products.html"
     }
   ]
 }
