@@ -4,6 +4,88 @@
   background-color: #fff;
   height: 80px;
   z-index: 9999;
+  &__language {
+    width: 100%;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &-list {
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+      filter: drop-shadow(0 1px 10px #d3e9ff);
+      position: absolute;
+      width: 100%;
+      max-width: 200px;
+      height: 210px;
+      background: #fff;
+      border-radius: 23px;
+      top: 45px;
+      left: 0;
+      padding: 15px 30px 15px 30px;
+      &.show {
+        visibility: visible;
+        opacity: 1;
+        pointer-events: all;
+      }
+      li {
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        transition: 0.3s;
+
+        &::before {
+          opacity: 0;
+          content: "";
+          width: inherit;
+          height: 55px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          background-color: #f4f9fe;
+          transition: 0.3s;
+          z-index: -1;
+        }
+        &:hover {
+          &::before {
+            opacity: 1;
+          }
+        }
+      }
+      &::before {
+        content: url("images/icons/icon-list.svg");
+        position: absolute;
+        top: -21px;
+        right: 44%;
+      }
+    }
+    li {
+      a {
+        color: #4f697d;
+        font-size: 20px;
+        @include pop-reg;
+        &.active-language {
+          display: flex;
+          align-items: center;
+          position: relative;
+          &::before {
+            content: url("images/icons/language.svg");
+            margin-right: 10px;
+          }
+          &::after {
+            content: "";
+            margin-left: 10px;
+            border-style: solid;
+            border-width: 5px 4.5px 0 4.5px;
+            border-color: #4f697d transparent transparent transparent;
+          }
+        }
+      }
+    }
+  }
   &.headroom {
     transition: 0.3s;
 
@@ -46,6 +128,13 @@
           transition: 0.3s;
           @include pop-reg;
           position: relative;
+          &.current {
+            color: #298ded;
+            &::after {
+              width: 100%;
+              right: 0;
+            }
+          }
           &:after {
             position: absolute;
             display: block;
@@ -54,7 +143,7 @@
             width: 0;
             left: 0;
             height: 1px;
-            bottom: -4px;
+            bottom: 0;
 
             color: #298ded;
             background-color: #298ded;

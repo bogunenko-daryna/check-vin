@@ -108,6 +108,7 @@ h1 {
 
 select {
   appearance: none;
+  position: relative;
   &::after {
     content: "";
     top: 14px;

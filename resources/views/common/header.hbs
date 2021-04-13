@@ -17,15 +17,27 @@
 
                 <div class="header__links">
                     <ul>
-                        <li><a href="#">Наши продукты</a></li>
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Блог</a></li>
-                        <li><a href="#">Партнерам</a></li>
+                        {{#with header}}
+                        <li><a class="{{class-products}}" href="#">Наши продукты</a></li>
+                        <li><a class="{{class-us}}" href="#">О нас</a></li>
+                        <li><a class="{{class-blog}}" href="#">Блог</a></li>
+                        <li><a class="{{class-partners}}" href="#">Партнерам</a></li>
+                        {{/with}}
                     </ul>
                 </div>
             </div>
             <div class="header__right">
-                <div class="header__language"></div>
+                <div class="header__language">
+                    <ul>
+                        <li><a class="active-language" href="#">Русский</a>
+                            <ul class="header__language-list">
+                                <li><a data-language="English" href="#">English</a></li>
+                                <li><a data-language="Русский" href="#">Русский</a></li>
+                                <li><a data-language="Українська" href="#">Українська</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
                 <a href="#" class="btn-gray">Войти</a>
                 <a href="#" class="btn-border">Регистрация</a>
             </div>

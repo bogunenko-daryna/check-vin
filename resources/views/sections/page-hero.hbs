@@ -17,28 +17,72 @@
                 </div>
 
                 <div class="page-hero__right">
-                    <form class="form" action="#">
-                        <div class="form__checkbox"></div>
-                        <div class="form__block">
-                            <label for="#">Тип отчета</label>
-                            <select name="" id="">
-                                <option value="">Авточек</option>
-                            </select>
-                        </div>
-                        <div class="form__block">
-                            <label for="#">VIN</label>
-                            <input type="text">
-                        </div>
-                        <div class="form__block">
-                            <label for="#">Email</label>
-                            <input type="email">
-                        </div>
-                        <div class="form__links">
-                            <button class="btn-blue">Проверить</button>
-                            <a href="#" class="link-blue">Помочь проекту</a>
-                        </div>
+                    <div class="page-hero__tabs tabs">
+                        <ul class="nav nav-pills nav-fill align-items-start align-items-lg-center" id="pills-tab"
+                            role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active text-nowrap" data-toggle="pill" href="#pills-vin" role="tab"
+                                    aria-controls="pills-vin" aria-selected="true">VIN</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link text-nowrap" data-toggle="pill" href="#pills-number">По
+                                    номеру</a>
+                            </li>
 
-                    </form>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-vin">
+                                <form class="form" action="#">
+                                    <div class="form__block">
+                                        <label for="#">Тип отчета</label>
+                                        <select name="" id="">
+                                            <option value="">Авточек</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__block">
+                                        <label for="#">VIN</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="form__block">
+                                        <label for="#">Email</label>
+                                        <input type="email">
+                                    </div>
+                                    <div class="form__links">
+                                        <button class="btn-blue modal-btn">Проверить</button>
+                                        <a href="#" class="link-blue">Помочь проекту</a>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="pills-number">
+                                <div class="tab-pane__info">
+                                    <form class="form" action="#">
+                                        <div class="form__block">
+                                            <label for="#">Тип отчета</label>
+                                            <select name="" id="">
+                                                <option value="">Авточек</option>
+                                            </select>
+                                        </div>
+                                        <div class="form__block">
+                                            <label for="#">Номер</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="form__block">
+                                            <label for="#">Email</label>
+                                            <input type="email">
+                                        </div>
+                                        <div class="form__links">
+                                            <button class="btn-blue modal-btn">Проверить</button>
+                                            <a href="#" class="link-blue">Помочь проекту</a>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -57,7 +101,7 @@
                     <p>Отчетов Комплектации</p>
                 </div>
             </div>
-
+            {{> ../sections/modal }}
         </div>
     </div>
 </div>
