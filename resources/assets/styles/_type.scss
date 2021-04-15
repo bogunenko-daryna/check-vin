@@ -12,6 +12,10 @@ p {
   line-height: 30px;
   @include pop-reg;
   color: #4f697d;
+  @media (max-width: 575px) {
+    font-size: 15px;
+    line-height: 23px;
+  }
 }
 a,
 button {

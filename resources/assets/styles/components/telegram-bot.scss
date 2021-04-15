@@ -1,14 +1,23 @@
 .telegram-bot {
   background-image: url("images/car-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
   height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media (max-width: 575px) {
+    background-image: url("images/car-bg-mobile.jpg");
+    height: 100%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
   .btn-mobile {
     display: none;
-    margin: 15px auto;
+    margin: 15px auto 0 auto;
     @media (max-width: 991px) {
       display: flex;
     }
@@ -21,6 +30,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 575px) {
+      height: 85px;
+    }
   }
   &__info {
     display: flex;

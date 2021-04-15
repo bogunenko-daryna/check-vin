@@ -38,14 +38,18 @@ export default {
   
    }
 
+   if (window.innerWidth < 576) {
+    $('.active-language').text('');
+   }
    
+if (window.innerWidth > 575) {
+  $('.header__language-list a').on('click', function() {
+    let el = $(this).data('language');
+    $('.active-language').text(el);
+    $('.header__language-list').removeClass('show');
+    });
+}
    
-
-   $('.header__language-list a').on('click', function() {
-   let el = $(this).data('language');
-   $('.active-language').text(el);
-   $('.header__language-list').removeClass('show');
-   });
 
    $('.active-language').on('click', function() {
      $(this).next().addClass('show');
@@ -62,9 +66,11 @@ export default {
 
   $('.modal-btn').on('click', function() {
      $('.modal').addClass('show');
+     $('body').css('overflow', 'hidden');
   });
   $('.modal-close').on('click', function() {
     $('.modal').removeClass('show');
+    $('body').css('overflow', 'visible');
  });
 
 

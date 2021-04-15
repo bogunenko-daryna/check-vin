@@ -3,6 +3,12 @@
   margin-bottom: 170px;
   position: relative;
   overflow: hidden;
+  @media (max-width: 991px) {
+    margin-bottom: 0;
+  }
+  .page-hero {
+    padding: 0;
+  }
   &::before {
     content: url("images/icons/bg-registration.svg");
     position: absolute;

@@ -1,5 +1,21 @@
 .home-slider {
   padding-top: 100px;
+  position: relative;
+  overflow: hidden;
+  @media (max-width: 575px) {
+    padding-top: 50px;
+  }
+  &::before {
+    content: url("images/icons/bg-registration.svg");
+    position: absolute;
+    top: 0;
+    left: -120px;
+    z-index: -1;
+    @media (max-width: 575px) {
+      left: -50%;
+      top: -80px;
+    }
+  }
   .swiper-container {
     max-width: 1300px;
     margin: auto;
@@ -8,6 +24,12 @@
     background-image: url("images/testimonials.svg");
     background-position: top;
     background-repeat: no-repeat;
+    @media (max-width: 767px) {
+      background-size: 65%;
+    }
+    @media (max-width: 575px) {
+      background-size: 27%;
+    }
   }
   &__top {
     display: flex;
@@ -17,17 +39,41 @@
       color: #4f697d;
       font-size: 20px;
       @include semi-bold;
+      @media (max-width: 575px) {
+        font-size: 15px;
+        text-align: center;
+      }
     }
   }
   .swiper-button-next {
     position: absolute;
-    bottom: 120px;
+    bottom: 86px;
     right: 0;
+    @media (max-width: 575px) {
+      bottom: 46px;
+      z-index: 999;
+      svg {
+        width: 43px;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+    }
   }
   .swiper-button-prev {
     position: absolute;
-    bottom: 120px;
+    bottom: 86px;
     left: 0;
+    @media (max-width: 575px) {
+      bottom: 46px;
+      z-index: 999;
+      svg {
+        width: 43px;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+    }
   }
   .swiper-button-disabled {
     pointer-events: none;
@@ -40,15 +86,18 @@
   .slider-quotes {
     margin-top: 135px;
     padding-bottom: 90px;
-    padding-left: 20px;
-    @media (max-width: 991px) {
-      padding-left: 0;
+    @media (max-width: 575px) {
+      padding-bottom: 50px;
+      margin-top: 40px;
     }
     .swiper-pagination {
       display: flex;
       align-items: center;
       justify-content: center;
       margin-top: 60px;
+      @media (max-width: 575px) {
+        margin-top: 25px;
+      }
     }
     .swiper-pagination-bullet {
       display: flex;
@@ -87,15 +136,22 @@
     &__text {
       p {
         margin-top: 40px;
+        @media (max-width: 575px) {
+          margin-top: 20px;
+        }
       }
       strong {
         color: #4f697d;
         font-size: 20px;
         @include semi-bold;
+        @media (max-width: 575px) {
+          font-size: 15px;
+        }
       }
     }
     &__slide {
       height: 330px;
+      margin-left: 15px;
       padding: 30px 40px 30px 60px;
       width: 100%;
       max-width: 605px;
@@ -111,12 +167,23 @@
       }
       @media (max-width: 991px) {
         max-width: 100%;
+        margin-left: 0;
+      }
+      @media (max-width: 575px) {
+        padding: 20px 15px;
+        height: 260px;
+      }
+      @media (max-width: 375px) {
+        height: 300px;
       }
       p {
         @include pop-italic;
         font-size: 20px;
         line-height: 30px;
         color: #a2a2a2;
+        @media (max-width: 575px) {
+          font-size: 15px;
+        }
       }
     }
   }
