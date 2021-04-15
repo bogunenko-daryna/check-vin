@@ -29,7 +29,10 @@
 @import "components/products.scss";
 @import "components/blog-banner";
 @import "components/blog";
+@import "components/chat.scss";
 //common
-@import "common/header.scss";
+@import "common/header";
 @import "common/footer";
-@import "common/modal.scss";
+@import "common/modal";
+@import "common/registration";
+@import "common/mobile-menu";

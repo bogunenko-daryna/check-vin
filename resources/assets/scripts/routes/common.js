@@ -19,6 +19,19 @@ export default {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+
+      breakpoints: {
+            
+        992: {
+          slidesPerView: 2,
+          spaceBetween: 50,
+        },
+       
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+      },
     });
     mySwiper.init();
   
@@ -53,6 +66,15 @@ export default {
   $('.modal-close').on('click', function() {
     $('.modal').removeClass('show');
  });
+
+
+ $('.header__burder').on('click', function() {
+  $('.mobile-menu').addClass('show');
+ });
+
+ $('.close-menu').on('click', function() {
+  $('.mobile-menu').removeClass('show');
+  });
     
   },
 

@@ -1,0 +1,54 @@
+.registration {
+  padding-top: 140px;
+  margin-bottom: 170px;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: url("images/icons/bg-registration.svg");
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  &.sign-in {
+    padding-bottom: 180px;
+  }
+  .page-hero__tabs {
+    margin: auto;
+    height: 100% !important;
+    .restore-btn {
+      margin: auto;
+      max-width: 300px;
+      background: #298ded;
+      border-radius: 23px;
+      border: 1px solid #e5e5e5;
+      color: #fff;
+      height: 40px;
+      font-size: 20px;
+      @include pop-reg;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .nav {
+      max-width: 300px;
+      li {
+        max-width: 150px;
+        a {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  .form__block {
+    position: relative;
+  }
+  .max-length {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 15px;
+    color: #a2a2a2;
+    @include pop-reg;
+  }
+}

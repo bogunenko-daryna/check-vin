@@ -1,5 +1,21 @@
 .products {
   padding-top: 80px;
+  overflow: hidden;
+  position: relative;
+  &::after {
+    content: url("images/icons/bg-el.svg");
+    position: absolute;
+    bottom: 20px;
+    right: -35px;
+    z-index: -1;
+  }
+  &__mobile-img {
+    display: none;
+    margin-right: 15px;
+    @media (max-width: 767px) {
+      display: flex;
+    }
+  }
   .page__bg {
     padding-top: 35px;
   }
@@ -11,9 +27,17 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 115px;
+    @media (max-width: 1320px) {
+      flex-direction: column;
+      margin-bottom: 0;
+      align-items: center;
+    }
     .products__card {
       &:first-child {
         margin-right: 40px;
+        @media (max-width: 1320px) {
+          margin-right: 0;
+        }
       }
     }
   }
@@ -22,10 +46,16 @@
     max-width: 800px;
     background: rgba(41, 141, 237, 0.05);
     box-shadow: inset 0 1px 10px #d3e9ff;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(5px);
     border-radius: 49.0901px;
     display: flex;
     padding: 10px 55px 50px 26px;
+    @media (max-width: 1320px) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
     &-btn {
       margin-top: 80px;
     }
@@ -44,9 +74,17 @@
         }
       }
     }
+    &-title {
+      display: flex;
+      flex-direction: column;
+    }
     &-header {
       margin-top: 20px;
       margin-bottom: 30px;
+      @media (max-width: 767px) {
+        display: flex;
+        align-items: center;
+      }
       span {
         display: flex;
         margin-top: 7px;
@@ -86,9 +124,12 @@
       background-repeat: no-repeat;
       background-size: cover;
       width: 100%;
-      max-width: 320px;
+      min-width: 250px;
       height: inherit;
       display: flex;
+      @media (max-width: 767px) {
+        display: none;
+      }
       img {
         width: 100%;
       }

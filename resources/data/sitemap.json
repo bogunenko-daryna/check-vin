@@ -25,6 +25,11 @@
       "title": "Products Page",
       "description": "pending",
       "url": "/products.html"
+    },
+    {
+      "title": "Registration Page",
+      "description": "pending",
+      "url": "/registration.html"
     }
   ]
 }

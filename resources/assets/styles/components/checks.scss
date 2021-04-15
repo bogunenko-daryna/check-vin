@@ -7,6 +7,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: url("images/icons/bg-el.svg");
+    position: absolute;
+    top: 30px;
+    right: 0;
+  }
   &__top {
     margin-bottom: 190px;
     display: flex;

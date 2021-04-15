@@ -3,7 +3,17 @@
   padding-bottom: 240px;
   z-index: 999;
   position: relative;
-
+  @media (max-width: 991px) {
+    padding-bottom: 80px;
+  }
+  overflow: hidden;
+  &::after {
+    content: url("images/icons/bg-el.svg");
+    position: absolute;
+    bottom: -20px;
+    right: -35px;
+    z-index: -1;
+  }
   .page__header {
     b {
       margin-right: 5px;
@@ -13,26 +23,43 @@
     padding-top: 30px;
   }
   &__text {
-    margin-top: 65px;
+    margin-top: 60px;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    @media (max-width: 991px) {
+      flex-direction: column;
+      margin-top: 35px;
+    }
     &-right,
     &-left {
       width: 50%;
+      @media (max-width: 991px) {
+        width: 100%;
+      }
     }
     &-left {
       margin-right: 120px;
+      @media (max-width: 991px) {
+        margin-right: 0;
+      }
     }
     li {
       display: flex;
       align-items: center;
       margin-bottom: 25px;
+      @media (max-width: 991px) {
+        margin-bottom: 17px;
+      }
       a {
         color: #4f697d;
         font-size: 20px;
         line-height: 30px;
         @include pop-reg;
+        @media (max-width: 575px) {
+          font-size: 15px;
+          line-height: 23px;
+        }
       }
       svg {
         margin-right: 7px;
@@ -42,11 +69,19 @@
       font-size: 20px;
       line-height: 30px;
       color: #4f697d;
+      @media (max-width: 575px) {
+        font-size: 15px;
+        line-height: 23px;
+      }
       b {
         font-size: 20px;
         line-height: 30px;
         color: #4f697d;
         @include semi-bold;
+        @media (max-width: 575px) {
+          font-size: 15px;
+          line-height: 23px;
+        }
       }
     }
     strong {
@@ -55,6 +90,10 @@
       line-height: 30px;
       color: #4f697d;
       @include semi-bold;
+      @media (max-width: 575px) {
+        font-size: 15px;
+        line-height: 23px;
+      }
     }
     &__bottom {
       .contact-us__paragraph {
@@ -66,5 +105,8 @@
   &__paragraph {
     margin-bottom: 55px;
     max-width: 800px;
+    @media (max-width: 991px) {
+      margin-bottom: 30px;
+    }
   }
 }

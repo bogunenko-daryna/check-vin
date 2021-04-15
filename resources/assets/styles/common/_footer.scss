@@ -13,6 +13,9 @@
   }
   &__links {
     max-width: 380px;
+    @media (max-width: 991px) {
+      margin-bottom: 30px;
+    }
     li {
       display: flex;
       align-items: center;
@@ -83,6 +86,9 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
     h3 {
       text-transform: uppercase;
       color: #298ded;
