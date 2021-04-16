@@ -3,12 +3,26 @@
   margin-bottom: 65px;
   position: relative;
   overflow: hidden;
+  @media (max-width: 575px) {
+    padding-top: 55px;
+  }
+  .container {
+    @media (max-width: 575px) {
+      padding: 0;
+    }
+  }
   &::after {
     content: url("images/icons/bg-el.svg");
     position: absolute;
     bottom: -20px;
     right: -35px;
     z-index: -1;
+  }
+  .page__header {
+    @media (max-width: 575px) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
   }
   .page__bg {
     padding-top: 35px;
@@ -18,6 +32,10 @@
     justify-content: space-between;
     @media (max-width: 991px) {
       flex-direction: column;
+    }
+    @media (max-width: 575px) {
+      padding-right: 15px;
+      padding-left: 15px;
     }
     &-left {
       margin-right: 120px;
@@ -31,6 +49,9 @@
       @media (max-width: 991px) {
         max-width: 100%;
       }
+      @media (max-width: 575px) {
+        margin-bottom: 25px;
+      }
     }
   }
   &__bg {
@@ -41,14 +62,31 @@
     width: 100%;
     height: 550px;
     margin-bottom: 15px;
+    @media (max-width: 991px) {
+      height: 350px;
+    }
+    @media (max-width: 575px) {
+      height: 220px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
   }
   &__top {
     margin-bottom: 45px;
+    @media (max-width: 575px) {
+      margin-bottom: 30px;
+    }
     span {
       font-size: 20px;
       line-height: 30px;
       color: #a2a2a2;
       @include pop-reg;
+      @media (max-width: 575px) {
+        font-size: 15px;
+        line-height: 23px;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
     }
   }
 }

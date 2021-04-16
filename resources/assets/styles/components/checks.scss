@@ -15,6 +15,9 @@
     position: absolute;
     top: 30px;
     right: 0;
+    @media (max-width: 991px) {
+      right: -13%;
+    }
     @media (max-width: 575px) {
       display: none;
     }
@@ -24,6 +27,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 991px) {
+      margin-bottom: 80px;
+    }
     @media (max-width: 575px) {
       margin-bottom: 45px;
     }
@@ -44,6 +50,8 @@
   &__list {
     max-width: 1100px;
     margin: auto;
+    z-index: 999;
+    position: relative;
     &-info {
       display: flex;
       align-items: center;
@@ -71,8 +79,8 @@
     background-image: url("images/checks.svg");
     background-position: top;
     background-repeat: no-repeat;
-    @media (max-width: 767px) {
-      background-size: 65%;
+    @media (max-width: 991px) {
+      background-size: 39%;
     }
     @media (max-width: 575px) {
       background-size: 27%;

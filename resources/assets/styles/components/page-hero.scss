@@ -16,6 +16,9 @@
   }
   &__numbers {
     margin: 140px auto 0 auto;
+    @media (max-width: 991px) {
+      margin-top: 80px;
+    }
     @media (max-width: 767px) {
       margin-top: 50px;
     }
@@ -160,6 +163,11 @@
       font-size: 30px;
       margin-bottom: 30px;
       @include pop-bold;
+      @media (max-width: 767px) {
+        max-width: 280px;
+        height: 61px;
+        font-size: 25px;
+      }
       @media (max-width: 575px) {
         max-width: 200px;
         font-size: 25px;
@@ -191,6 +199,9 @@
         color: #4f697d;
         font-size: 20px;
         @include pop-reg;
+        @media (max-width: 767px) {
+          height: 55px;
+        }
         @media (max-width: 575px) {
           height: 40px;
           font-size: 15px;

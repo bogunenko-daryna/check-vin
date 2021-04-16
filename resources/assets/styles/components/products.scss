@@ -2,12 +2,18 @@
   padding-top: 80px;
   overflow: hidden;
   position: relative;
+  @media (max-width: 575px) {
+    padding-top: 50px;
+  }
   &::after {
     content: url("images/icons/bg-el.svg");
     position: absolute;
     bottom: 20px;
     right: -35px;
     z-index: -1;
+    @media (max-width: 575px) {
+      right: -150px;
+    }
   }
   &__mobile-img {
     display: none;
@@ -22,6 +28,13 @@
   &__content {
     margin-top: 70px;
     margin-bottom: 180px;
+    @media (max-width: 991px) {
+      margin-bottom: 100px;
+    }
+    @media (max-width: 575px) {
+      margin-top: 35px;
+      margin-bottom: 30px;
+    }
   }
   &__string {
     display: flex;
@@ -56,21 +69,45 @@
     @media (max-width: 767px) {
       flex-direction: column;
     }
+    @media (max-width: 575px) {
+      padding: 10px 25px 30px 25px;
+    }
     &-btn {
       margin-top: 80px;
+      @include pop-bold;
+      @media (max-width: 767px) {
+        max-width: 280px;
+        height: 61px;
+        font-size: 25px;
+        margin-top: 50px;
+      }
+      @media (max-width: 575px) {
+        margin-top: 30px;
+      }
     }
     &-info {
       margin-left: 25px;
+      @media (max-width: 575px) {
+        margin-left: 0;
+      }
       p {
         font-size: 20px;
         line-height: 30px;
         color: #4f697d;
+        @media (max-width: 575px) {
+          font-size: 15px;
+          line-height: 23px;
+        }
 
         b {
           font-size: 20px;
           line-height: 30px;
           color: #4f697d;
           @include semi-bold;
+          @media (max-width: 575px) {
+            font-size: 15px;
+            line-height: 23px;
+          }
         }
       }
     }
@@ -85,6 +122,10 @@
         display: flex;
         align-items: center;
       }
+      @media (max-width: 575px) {
+        margin-bottom: 15px;
+        margin-top: 0;
+      }
       span {
         display: flex;
         margin-top: 7px;
@@ -96,6 +137,9 @@
           color: #233142;
           display: flex;
           align-items: center;
+          @media (max-width: 575px) {
+            font-size: 15px;
+          }
           &:nth-child(2) {
             margin-left: 13px;
           }
@@ -107,6 +151,9 @@
               height: 17px;
               background: #233142;
               margin-left: 8px;
+              @media (max-width: 575px) {
+                height: 15px;
+              }
             }
           }
         }
@@ -117,6 +164,10 @@
         letter-spacing: 0.25em;
         text-transform: uppercase;
         color: #233142;
+        @media (max-width: 575px) {
+          font-size: 20px;
+          margin-bottom: 6px;
+        }
       }
     }
     &-img {

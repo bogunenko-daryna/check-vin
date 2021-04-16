@@ -1,10 +1,31 @@
+.restore-password {
+  .registration {
+    margin-bottom: 0;
+    padding-bottom: 550px;
+    &::before {
+      bottom: 50px;
+    }
+  }
+}
+
 .registration {
   padding-top: 140px;
-  margin-bottom: 170px;
+  padding-bottom: 170px;
   position: relative;
   overflow: hidden;
   @media (max-width: 991px) {
-    margin-bottom: 0;
+    padding-bottom: 90px;
+  }
+
+  .register-btn {
+    @media (max-width: 991px) {
+      max-width: 280px;
+      height: 61px;
+      font-size: 25px;
+    }
+    @media (max-width: 575px) {
+      max-width: 300px !important;
+    }
   }
   .page-hero {
     padding: 0;
@@ -15,6 +36,14 @@
     bottom: 0;
     left: 0;
     z-index: -1;
+    @media (max-width: 991px) {
+      bottom: -41px;
+      left: -187px;
+    }
+    @media (max-width: 575px) {
+      left: -200px;
+      bottom: -100px;
+    }
   }
   &.sign-in {
     padding-bottom: 180px;

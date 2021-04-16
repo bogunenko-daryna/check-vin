@@ -6,6 +6,34 @@
   z-index: 9999;
   &__burger {
     display: none;
+    a {
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: #4f697d;
+        width: 32px;
+        height: 1px;
+
+        &:before {
+          content: "";
+          background: #4f697d;
+          width: 32px;
+          height: 1px;
+          position: relative;
+          top: -8px;
+        }
+        &::after {
+          content: "";
+          background: #4f697d;
+          width: 32px;
+          height: 1.33px;
+          position: relative;
+          bottom: -8px;
+        }
+      }
+    }
     @media (max-width: 1165px) {
       display: block;
     }
