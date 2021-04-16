@@ -30,6 +30,21 @@
       "title": "Registration Page",
       "description": "pending",
       "url": "/registration.html"
+    },
+    {
+      "title": "Sign-in Page",
+      "description": "pending",
+      "url": "/sign-in.html"
+    },
+    {
+      "title": "Password Page",
+      "description": "pending",
+      "url": "/restore-password.html"
+    },
+    {
+      "title": "Error Page",
+      "description": "pending",
+      "url": "/error.html"
     }
   ]
 }

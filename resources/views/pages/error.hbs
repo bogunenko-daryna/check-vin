@@ -58,75 +58,38 @@
             </div>
         </div>
     </header>
-    <div class="registration sign-in ">
+    <div class="registration error">
         <div class="page__bg">
             <div class="container">
                 <div class="registration__content page-hero">
-                    <div class="page-hero__tabs tabs">
-                        <ul class="nav nav-pills nav-fill align-items-start align-items-lg-center" id="pills-tab"
-                            role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link active text-nowrap" data-toggle="pill" href="#pills-sign" role="tab"
-                                    aria-controls="pills-vin" aria-selected="true">Войти</a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link text-nowrap" data-toggle="pill"
-                                    href="#pills-registration">Регистрация
-                                </a>
-                            </li>
-
-                        </ul>
-                        <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-sign">
-                                <form class="form" action="#">
-
-                                    <div class="form__block">
-                                        <label for="#">Email</label>
-                                        <input type="text">
-                                    </div>
-                                    <div class="form__block">
-                                        <label for="#">Пароль</label>
-                                        <input type="email">
-                                    </div>
-                                    <div class="form__links">
-                                        <button class="btn-blue ">Войти</button>
-                                        <a href="/restore-password.html" class="link-blue">Забыл пароль</a>
-                                    </div>
-
-                                </form>
-                            </div>
-                            <div class="tab-pane fade" id="pills-registration">
-                                <div class="tab-pane__info">
-                                    <form class="form" action="#">
-
-                                        <div class="form__block">
-                                            <label for="#">Имя</label>
-                                            <input maxlength="10" type="text">
-                                            <span class="max-length">0/10</span>
-                                        </div>
-                                        <div class="form__block">
-                                            <label for="#">Email</label>
-                                            <input type="email">
-                                        </div>
-                                        <div class="form__block">
-                                            <label for="#">Пароль</label>
-                                            <input type="email">
-                                        </div>
-                                        <div class="form__block">
-                                            <label for="#">Подтверждение пароля</label>
-                                            <input type="email">
-                                        </div>
-                                        <div class="form__links">
-                                            <button class="btn-blue register-btn">Зарегистрироваться</button>
-
-                                        </div>
-
-                                    </form>
-                                </div>
-                            </div>
-
-
-                        </div>
+                    <div class="error__content">
+                        <h2>4<svg xmlns="http://www.w3.org/2000/svg" width="324" height="324" viewBox="0 0 324 324"
+                                fill="none">
+                                <g filter="url(#filter0_bi)">
+                                    <rect x="35.3553" y="161.558" width="178.478" height="178.478" rx="89.2389"
+                                        transform="rotate(-45 35.3553 161.558)" stroke="#298DED" stroke-width="50" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_bi" x="-15" y="-15" width="353.116" height="353.116"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feGaussianBlur in="BackgroundImage" stdDeviation="7.5" />
+                                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur"
+                                            result="shape" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dy="1" />
+                                        <feGaussianBlur stdDeviation="5" />
+                                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.827451 0 0 0 0 0.913725 0 0 0 0 1 0 0 0 1 0" />
+                                        <feBlend mode="normal" in2="shape" result="effect2_innerShadow" />
+                                    </filter>
+                                </defs>
+                            </svg>4</h2>
+                        <strong>ОШИБКА</strong>
+                        <span>СТРАНИЦА НЕ НАЙДЕНА</span>
                     </div>
                 </div>
             </div>
@@ -134,8 +97,8 @@
 
     </div>
 
-
     {{> ../common/mobile-menu }}
+
     {{> ../common/footer }}
 </body>
 

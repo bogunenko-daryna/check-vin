@@ -9,16 +9,21 @@
 }
 
 .registration {
-  padding-top: 140px;
+  padding-top: 80px;
   padding-bottom: 170px;
   position: relative;
   overflow: hidden;
   @media (max-width: 991px) {
     padding-bottom: 90px;
   }
-
+  .page__bg {
+    padding-top: 60px;
+    @media (max-width: 767px) {
+      padding-top: 20px;
+    }
+  }
   .register-btn {
-    @media (max-width: 991px) {
+    @media (max-width: 767px) {
       max-width: 280px;
       height: 61px;
       font-size: 25px;
