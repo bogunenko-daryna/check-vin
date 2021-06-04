@@ -14,7 +14,6 @@
     width: 65px;
     height: 65px;
     background: #298ded;
-    box-shadow: inset 0 1px 10px #d3e9ff;
     backdrop-filter: blur(15px);
     border-radius: 49.0901px;
     display: flex;
@@ -23,7 +22,6 @@
   }
   &__message {
     margin-bottom: 10px;
-    width: 180px;
     background: #d3e9ff;
     box-shadow: inset 0 1px 10px #d3e9ff;
     border-radius: 5px;
@@ -34,6 +32,7 @@
     p {
       color: #4f697d;
       text-align: center;
+      padding: 0 35px;
     }
   }
 }

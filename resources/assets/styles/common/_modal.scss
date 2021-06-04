@@ -36,6 +36,10 @@
     a {
       position: absolute;
       right: 0;
+      @media (max-width: 336px) {
+        position: relative;
+        margin-left: 5px;
+      }
     }
   }
   &__links {
@@ -140,15 +144,22 @@
       padding-right: 5px;
       padding-left: 5px;
     }
+    @media (max-width: 356px) {
+      margin: 0;
+    }
 
     p,
     span {
       color: #fff;
+      text-align: center;
       @media (max-width: 767px) {
         font-size: 15px;
       }
       @media (max-width: 575px) {
         font-size: 11px !important;
+      }
+      @media (max-width: 336px) {
+        line-height: 17px !important;
       }
     }
     span {
